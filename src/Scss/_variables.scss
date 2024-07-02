@@ -1,0 +1,7 @@
+@import '../../node_modules/bootstrap/scss/variables';
+
+$custom-colors: (
+  'pink': $pink
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);

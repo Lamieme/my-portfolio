@@ -1,0 +1,6 @@
+@font-face {
+  font-family: 'Neue Kabel';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Neue Kabel'), url('./assets/fonts/NeueKabel.otf') format('opentype');
+}
