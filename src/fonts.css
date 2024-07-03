@@ -4,3 +4,10 @@
   font-weight: 400;
   src: local('Neue Kabel'), url('./assets/fonts/NeueKabel.otf') format('opentype');
 }
+
+@font-face {
+  font-family: 'ITC Kabel Std Ultra';
+  font-style: normal;
+  font-weight: 400;
+  src: local('ITC Kabel Std Ultra'), url('./assets/fonts/ITCKabelStd-Ultra.otf') format('opentype');
+}

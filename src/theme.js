@@ -14,7 +14,7 @@ const theme = extendTheme({
           main: MAIN_COLOR
         },
         secondary: {
-          main: '#fcba03'
+          main: '#FFFCEC'
         },
         text: {
           primary: MAIN_COLOR
