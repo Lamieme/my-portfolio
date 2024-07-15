@@ -6,6 +6,7 @@ import { useState } from 'react'
 import AppBar from './components/AppBar'
 import Profile from './pages/Profile'
 import Catalog from './pages/Catalog/_id'
+import RouterComponent from './routes'
 
 function App() {
   const [backgroundColor, setBackgroundColor] = useState('primary.main')
@@ -20,15 +21,16 @@ function App() {
         py: '100px'//lùi 2 bên trên dưới
       }}>
       {/* header */}
-      <AppBar />
-      <Routes>
+      {/* <AppBar /> */}
+      {/* <Routes>
         <Route path='*' element={<Board backgroundColor={backgroundColor} setBackgroundColor={setBackgroundColor} />} />
         <Route path='land' element={<Board backgroundColor={backgroundColor} setBackgroundColor={setBackgroundColor} />} />
         <Route path='profile' element={<Profile backgroundColor={backgroundColor} setBackgroundColor={setBackgroundColor} />} />
         <Route path='catalog' element={<Catalog backgroundColor={backgroundColor} setBackgroundColor={setBackgroundColor} />} />
-      </Routes>
+      </Routes> */}
       {/* footer */}
-      <Footer />
+      <RouterComponent backgroundColor={backgroundColor} setBackgroundColor={setBackgroundColor} />
+      {/* <Footer /> */}
     </Container>
   )
 }

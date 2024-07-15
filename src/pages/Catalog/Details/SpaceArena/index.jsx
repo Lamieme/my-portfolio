@@ -1,16 +1,16 @@
+import Detail from './SADetails/index'
 import AppBar from '~/components/AppBar'
-import BoardBar from './BoardBar'
 import Footer from '~/components/Footer'
 
-function Board({ backgroundColor, setBackgroundColor }) {
+function SpaceArena({ setBackgroundColor }) {
   setBackgroundColor('#fffcec')
   return (
     <>
       <AppBar />
-      <BoardBar />
+      <Detail />
       <Footer />
     </>
   )
 }
 
-export default Board
+export default SpaceArena

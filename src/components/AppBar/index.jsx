@@ -5,14 +5,16 @@ function AppBar() {
   const location = useLocation()
   const color = () => {
     switch (location.pathname) {
-    case '/':
-      return 'primary.main'
-    case '/catalog':
-      return '#fffcec'
-    case '/profile':
-      return '#fffcec'
-    default:
-      return 'primary.main'
+      case '/':
+        return 'primary.main'
+      case '/catalog':
+        return '#fffcec'
+      case '/profile':
+        return '#fffcec'
+      case '/catalog/spaceArena':
+        return 'primary.main'
+      default:
+        return 'primary.main'
     }
   }
   return (

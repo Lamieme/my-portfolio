@@ -10,8 +10,10 @@ function Footer() {
     case '/':
       return 'primary.main'
     case '/land':
-      return '#fffcec'
+      return 'primary.main'
     case '/profile':
+      return '#fffcec'
+    case '/catalog':
       return '#fffcec'
     default:
       return 'primary.main'

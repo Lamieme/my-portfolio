@@ -45,37 +45,39 @@ function CatalogContent() {
 
               <div key={`column-${index}`} className="col-md-5 gap-5 mb-5">
                 <Card key={index} sx={{ maxWidth: 500, border: '16px solid #fff' }}>
-                  <Box sx={{
-                    bgcolor: '#1e1e1e',
-                    p: '15px'
-                  }}>
-                    <CardMedia
-                      sx={{
-                        width: '100%',
-                        height: '180px'
-                      }}
-                      image={value.imgUrl}
-                      alt="space arena"
-                    />
-                    <CardContent sx={{
-                      pl: '0px',
-                      py: '0px',
-                      '&.MuiCardContent-root:last-child': {
-                        pb: 0
-                      }
+                  <CardActionArea href={`/catalog/${value.id}`}>
+                    <Box sx={{
+                      bgcolor: '#1e1e1e',
+                      p: '15px'
                     }}>
-                      <Typography gutterBottom variant="h5" component="div" sx={{
-                        fontFamily: 'ITC Kabel Std Ultra, Neue Kabel, Roboto, Arial, sans-serif',
-                        fontWeight: '800',
-                        fontSize: '40px',
-                        color: '#FFFCEC',
-                        py: '10px',
-                        m: 0
+                      <CardMedia
+                        sx={{
+                          width: '100%',
+                          height: '180px'
+                        }}
+                        image={value.imgUrl}
+                        alt="space arena"
+                      />
+                      <CardContent sx={{
+                        pl: '0px',
+                        py: '0px',
+                        '&.MuiCardContent-root:last-child': {
+                          pb: 0
+                        }
                       }}>
-                        {value.title}
-                      </Typography>
-                    </CardContent>
-                  </Box>
+                        <Typography gutterBottom variant="h5" component="div" sx={{
+                          fontFamily: 'ITC Kabel Std Ultra, Neue Kabel, Roboto, Arial, sans-serif',
+                          fontWeight: '800',
+                          fontSize: '40px',
+                          color: '#FFFCEC',
+                          py: '10px',
+                          m: 0
+                        }}>
+                          {value.title}
+                        </Typography>
+                      </CardContent>
+                    </Box>
+                  </CardActionArea>
                 </Card>
               </div>
             ))}

@@ -69,7 +69,7 @@ function BoardBar() {
         alignItems: 'center',
         marginTop: '100px'
       }}>
-        <Button href='/land' sx={{
+        <Button href='/catalog' sx={{
           border: '1px solid #d039af',
           borderRadius: '60px',
           padding: '0px 50px',
