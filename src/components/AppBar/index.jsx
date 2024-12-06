@@ -13,6 +13,8 @@ function AppBar() {
         return '#fffcec'
       case '/catalog/spaceArena':
         return 'primary.main'
+      case '/catalog/RodeBattle':
+        return 'primary.main'
       default:
         return 'primary.main'
     }

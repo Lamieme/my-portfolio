@@ -1,8 +1,8 @@
-import Detail from './HTRisksDetails/index'
 import AppBar from '~/components/AppBar'
 import Footer from '~/components/Footer'
+import Detail from './RBDetails'
 
-function HTRisks({ setBackgroundColor }) {
+function RodeBattle({ setBackgroundColor }) {
   setBackgroundColor('#fffcec')
   return (
     <div>
@@ -13,4 +13,4 @@ function HTRisks({ setBackgroundColor }) {
   )
 }
 
-export default HTRisks
+export default RodeBattle

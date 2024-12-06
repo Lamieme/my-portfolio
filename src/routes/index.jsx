@@ -1,4 +1,3 @@
-import React from 'react'
 import { createBrowserRouter, Navigate, Outlet, RouterProvider } from 'react-router-dom'
 import { childRoutes, publicRoutes } from './routes'
 import ErrorPage from '~/pages/ErrorPage'
